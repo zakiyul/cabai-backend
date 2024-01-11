@@ -12,6 +12,7 @@ from rest_framework import permissions
 from . import models
 from . import serializers
 
+
 @api_view(['GET','POST'])
 def gejala_list(request):
     if request.method == 'GET':
