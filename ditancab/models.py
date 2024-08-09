@@ -15,6 +15,14 @@ class Penyakit(models.Model):
     def __str__(self):
         return self.nama
     
+class Riwayat(models.Model):
+    nama    = models.CharField(max_length=255)
+    tgl     = models.DateTimeField()
+    result  = models.TextField()
+
+    def __str__(self):
+        return self.nama
+    
 class BasisPengetahuan(models.Model):
     kode_gejala = models.ForeignKey(Gejala, on_delete=models.CASCADE)
     kode_penyakit = models.ForeignKey(Penyakit, on_delete=models.CASCADE)

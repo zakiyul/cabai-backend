@@ -15,3 +15,8 @@ class BasisPengetahuanSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.BasisPengetahuan
         fields = '__all__'
+
+class RiwayatSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Riwayat
+        fields = '__all__'
